@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="noindex" />
+  <title>Book your ClearSight recording time</title>
+  <link rel="icon" type="image/png" href="/img/icon.png" />
+  <link rel="apple-touch-icon" href="/img/icon.png" />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <div class="wrap">
+    <header class="head">
+      <div>
+        <img class="logo" src="/img/logo.png" alt="ClearSight LASIK &amp; Lens" />
+        <h1>Share your ClearSight story</h1>
+        <p class="sub">
+          We're filming patient stories in Oklahoma City and Plano this fall. Pick a date at your
+          office, then choose a time. Each session runs about 30 minutes on camera.
+        </p>
+      </div>
+    </header>
+
+    <div class="grid">
+      <div>
+        <div class="months" id="months"></div>
+        <div class="legend">
+          <span class="key"><i class="swatch" style="background: var(--brand-wash)"></i> Oklahoma City</span>
+          <span class="key"><i class="swatch" style="background: var(--amber-wash)"></i> Plano</span>
+          <span class="key"><i class="swatch" style="background: #f1f4f4"></i> Full or past</span>
+        </div>
+      </div>
+
+      <div class="panel" id="panel"></div>
+    </div>
+  </div>
+
+  <script src="/calendar.js"></script>
+  <script src="/app.js"></script>
+</body>
+</html>
