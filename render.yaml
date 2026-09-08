@@ -3,16 +3,16 @@ services:
     name: clearsight-scheduler
     runtime: node
     plan: starter
-    region: ohio
     buildCommand: npm install --omit=dev
-    startCommand: npm start
+    startCommand: node server.js
     healthCheckPath: /
-    autoDeploy: true
     disk:
       name: clearsight-data
       mountPath: /data
       sizeGB: 1
     envVars:
+      - key: NODE_VERSION
+        value: "22"
       - key: NODE_ENV
         value: production
       - key: DATABASE_PATH
